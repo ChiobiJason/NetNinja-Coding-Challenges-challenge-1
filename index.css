@@ -1,0 +1,69 @@
+/* start styles */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&family=VT323&display=swap");
+
+body {
+  margin: 0;
+  background: #444;
+  font-family: "Poppins";
+}
+li,
+ul {
+  list-style-type: none;
+  padding: 0;
+  color: white;
+}
+main {
+  padding: 140px 40px 40px;
+  color: #bbb;
+}
+
+/* solution styles */
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+h3 {
+  color: white;
+  font-weight: 800;
+  font-size: 40px;
+  margin-right: 20px;
+}
+
+nav {
+  background-color: black;
+  display: block;
+  width: 200px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 0;
+}
+
+nav > ul {
+  padding-top: 150px;
+}
+
+ul > li {
+  padding-left: 50px;
+  padding-bottom: 20px;
+}
+
+.burger {
+  margin: 50px 20px;
+  z-index: 1;
+}
+
+.burger > span {
+  background-color: white;
+  width: 35px;
+  height: 5px;
+  margin-bottom: 5px;
+  border-radius: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+/* open state */
+
+/* transitions */
