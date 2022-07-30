@@ -38,15 +38,21 @@ nav {
   position: absolute;
   top: 0;
   z-index: 0;
+  opacity: 0;
 }
 
 nav > ul {
   padding-top: 150px;
 }
 
+nav.show {
+  opacity: 1;
+}
+
 ul > li {
-  padding-left: 50px;
+  padding-left: 30px;
   padding-bottom: 20px;
+  font-size: 25px;
 }
 
 .burger {
