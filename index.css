@@ -39,6 +39,7 @@ nav {
   top: 0;
   z-index: 0;
   opacity: 0;
+  left: -200px;
 }
 
 nav > ul {
@@ -46,6 +47,7 @@ nav > ul {
 }
 
 nav.show {
+  left: 0px;
   opacity: 1;
 }
 
@@ -70,6 +72,25 @@ ul > li {
   flex-direction: column;
   align-items: flex-start;
 }
-/* open state */
+
+.burger.show span:nth-child(1) {
+  transform: rotate(45deg) translateY(7px);
+}
+
+.burger.show span:nth-child(2) {
+  display: none;
+}
+
+.burger.show span:nth-child(3) {
+  transform: rotate(-45deg) translateY(-7px);
+}
 
 /* transitions */
+
+nav {
+  transition: left ease-in 0.3s;
+}
+
+.burger span {
+  transition: all ease-in 0.3s;
+}

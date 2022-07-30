@@ -5,4 +5,5 @@ console.log(nav);
 
 burger.addEventListener("click", () => {
     nav.classList.toggle("show")
+    burger.classList.toggle("show")
 })
